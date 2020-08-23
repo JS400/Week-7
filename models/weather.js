@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const weatherSchema = new mongoose.Schema({
-  name: { type: String, required: true, unique: true  },
+  name: { type: String, required: true, unique: true, index: true  },
   temperature: { type: Number, required: true  }
 });
 
